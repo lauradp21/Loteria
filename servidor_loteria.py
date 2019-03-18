@@ -16,6 +16,7 @@ try:
         print('Esperando conexion en {IP},{PORT}'.format(IP = IP, PORT = PORT))
         #Voy a coger el IP del cliente
         ip = cliente.getpeername()
+        ip = ip[0]
         ip = ip.split(".")
         suma = 0
         for i in ip:
